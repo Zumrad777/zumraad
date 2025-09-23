@@ -227,6 +227,11 @@ nav a {
   color: #444;
   text-align: center; 
 }
+#kitty {
+  display: none; 
+  width: 250px;
+  margin-top: 20px;
+}
 
 
 
