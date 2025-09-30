@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Comic Sans MS', Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'cursive';
     margin: 0;
     padding: 0;
     text-align: center;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #ffb6c1;
+    background: hsl(351, 53%, 42%);
     color: white;
 }
 
@@ -67,6 +67,7 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+
 
 /* Hero Section */
 .hero {
@@ -230,6 +231,152 @@ footer {
 
 #care-text {
   height: 600px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffcccb;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Кнопка открытия */
+#openSidebar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Сайдбар */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* скрыт */
+  width: 250px;
+  height: 100%;
+  background-color: #ffe6e6;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+#closeSidebar {
+  background: none;
+  border: none;
+  font-size: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+/* Ссылки внутри */
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+.sidebar a:hover {
+  color: #ff3366;
+}
+/* ===== Settings Page ===== */
+.settings-page {
+  background: #fffaf5;
+  font-family: 'Comic Sans MS', cursive;
+  color: #333;
+  text-align: center;
+  padding: 30px;
+}
+
+.settings-header {
+  background: #ffcbcb;
+  padding: 20px;
+  border-bottom: 4px solid #ff9e9e;
+}
+
+.settings-header h1 {
+  margin: 0;
+  color: #ff6b6b;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #ff9e9e;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #ff6b6b;
+}
+
+.settings-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff0f5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ff6b6b;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffcbcb;
+  font-size: 1em;
+}
+
+.save-btn {
+  background: #ff9e9e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.save-btn:hover {
+  background: #ff6b6b;
 }
 
 

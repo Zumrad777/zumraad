@@ -23,3 +23,15 @@ function resetKitty() {
   kitty.src = "";               
   document.getElementById("status").innerText = "Your kitty is waiting...";
 }
+
+function logout() {
+  alert("You have been logged out!");
+  window.location.href = "index.html";
+}
+document.getElementById('openSidebar').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.add('show');
+});
+
+document.getElementById('closeSidebar').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.remove('show');
+});
